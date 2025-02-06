@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunflowerYou</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="https://cdn-icons-png.freepik.com/256/575/575222.png?uid=R141193954&ga=GA1.1.1449996384.1721470394&semt=ais_hybrid"
+              width="60px"
+          /></a>
+        </div>
+        <nav>
+          <ul class="menuItem">
+            <a href="index.html"><li>Home</li></a>
+            <a href="product.html"><li>Product</li></a>
+            <a href="index.html"><li>About</li></a>
+            <a href="account.html"><li>Account</li></a>
+          </ul>
+        </nav>
+        <a href="shoppingCart.html"
+          ><img
+            src="https://cdn-icons-png.freepik.com/256/17658/17658761.png?uid=R141193954&ga=GA1.1.1449996384.1721470394&semt=ais_hybrid"
+            width="30px"
+            height="30px"
+        /></a>
+
+        <a href="shoppingCart.html">
+          <img
+            src="RedStore_Img/images/menu.png"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </a>
+      </div>
+    </div>
+    <!--Account Page-->
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <a href="index.html"
+              ><img src="RedStore_Img/images/kola1.png" width="100%"
+            /></a>
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="signup()">Sign up</span>
+                <hr id="indictor" />
+              </div>
+              <form id="login-form">
+                <input type="text" placeholder="username:" />
+                <input type="text" placeholder="account" />
+                <button class="btn" type="submit">Login</button>
+                <a href="#">forget password?</a>
+              </form>
+              <form id="register-form">
+                <input type="email" placeholder="email" />
+                <input type="text" placeholder="username:" />
+                <input type="password" placeholder="password" />
+                <button class="btn" type="submit">Sign up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download our App</h3>
+            <p>Download App for Android and IOS</p>
+            <div class="app-logo">
+              <img src="RedStore_Img/images/app-store.png" />
+              <img src="RedStore_Img/images/play-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img
+              src="https://cdn-icons-png.freepik.com/256/575/575222.png?uid=R141193954&ga=GA1.1.1449996384.1721470394&semt=ais_hybrid"
+              width="50px"
+            />
+            <p>
+              Our purpose is to make sustainably make the pleasure and benefits
+              of sports accessible to the many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Instagram</li>
+              <li>facebook</li>
+              <li>Youtube</li>
+              <li>twitter</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2025 - Shruti</p>
+      </div>
+    </div>
+    <script>
+      let menuItems = document.querySelector(".menuItem");
+      menuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if ((menuItems.style.maxHeight = "0px")) {
+          menuItems.style.maxHeight = "200px";
+        } else {
+          menuItems.style.maxHeight = "0px";
+        }
+      }
+      //toggle form
+      let loginform = document.getElementById("login-form");
+      let signupForm = document.getElementById("register-form");
+      let indictor = document.getElementById("indictor");
+
+      function signup() {
+        signupForm.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indictor.style.transform = "translateX(100px)";
+      }
+
+      function login() {
+        signupForm.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+        indictor.style.transform = "translateX(0px)";
+      }
+    </script>
+  </body>
+</html>

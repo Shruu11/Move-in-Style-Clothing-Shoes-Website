@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunflowerYou</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="https://cdn-icons-png.freepik.com/256/575/575222.png?uid=R141193954&ga=GA1.1.1449996384.1721470394&semt=ais_hybrid"
+              width="60px"
+          /></a>
+        </div>
+        <nav>
+          <ul class="menuItem">
+            <a href="index.html"><li>Home</li></a>
+            <a href="product.html"><li>Product</li></a>
+            <a href="index.html"><li>About</li></a>
+            <a href="account.html"><li>Account</li></a>
+          </ul>
+        </nav>
+        <a href="shoppingCart.html"
+          ><img
+            src="https://cdn-icons-png.freepik.com/256/17658/17658761.png?uid=R141193954&ga=GA1.1.1449996384.1721470394&semt=ais_hybrid"
+            width="30px"
+            height="30px"
+        /></a>
+
+        <a href="shoppingCart.html">
+          <img
+            src="RedStore_Img/images/menu.png"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </a>
+      </div>
+    </div>
+    <!---Single product details  -->
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img
+            src="RedStore_Img/images/gallery-1.jpg"
+            width="100%"
+            id="product-img"
+          />
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img
+                src="RedStore_Img/images/gallery-1.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="RedStore_Img/images/gallery-2.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="RedStore_Img/images/gallery-3.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="RedStore_Img/images/gallery-4.jpg"
+                width="100%"
+                class="small-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <p>Home / T-shirt</p>
+          <h1>Red printed t-shirt by H&M</h1>
+          <h4>$50.00</h4>
+          <select>
+            <option>xs</option>
+            <option>s</option>
+            <option>m</option>
+            <option>L</option>
+            <option>xl</option>
+            <option>xxl</option>
+            <option>xxxl</option>
+          </select>
+          <input type="number" value="1" />
+          <a href="#" class="btn">Add to Cart</a>
+          <h3>Product details<i class="fa fa-indent"></i></h3>
+          <p>
+            For ultimate summer comfort, choose breathable fabrics like cotton,
+            linen, or bamboo in a loose fit with light colors. Opt for
+            moisture-wicking and UV-protective t-shirts to stay cool and
+            sweat-free.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Title-->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related products</h2>
+        <p>View more</p>
+      </div>
+    </div>
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="RedStore_Img/images/product-9.jpg" />
+          <h4>Red printed t-shirt</h4>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="RedStore_Img/images/product-10.jpg" />
+          <h4>Red printed t-shirt</h4>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="RedStore_Img/images/product-11.jpg" />
+          <h4>Red printed t-shirt</h4>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="RedStore_Img/images/product-12.jpg" />
+          <h4>Red printed t-shirt</h4>
+          <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download our App</h3>
+            <p>Download App for Android and IOS</p>
+            <div class="app-logo">
+              <img src="RedStore_Img/images/app-store.png" />
+              <img src="RedStore_Img/images/play-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img
+              src="https://cdn-icons-png.freepik.com/256/575/575222.png?uid=R141193954&ga=GA1.1.1449996384.1721470394&semt=ais_hybrid"
+              width="50px"
+            />
+            <p>
+              Our purpose is to make sustainably make the pleasure and benefits
+              of sports accessible to the many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Instagram</li>
+              <li>facebook</li>
+              <li>Youtube</li>
+              <li>twitter</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2025 - Shruti</p>
+      </div>
+    </div>
+    <script>
+      let menuItems = document.querySelector(".menuItem");
+      menuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if ((menuItems.style.maxHeight = "0px")) {
+          menuItems.style.maxHeight = "200px";
+        } else {
+          menuItems.style.maxHeight = "0px";
+        }
+      }
+      //Js for product gallery
+      let productImg = document.getElementById("product-img");
+      let smallImg = document.getElementsByClassName("small-img");
+
+      smallImg[0].onclick = function () {
+        productImg.src = smallImg[0].src;
+      };
+      smallImg[1].onclick = function () {
+        productImg.src = smallImg[1].src;
+      };
+      smallImg[2].onclick = function () {
+        productImg.src = smallImg[2].src;
+      };
+      smallImg[3].onclick = function () {
+        productImg.src = smallImg[3].src;
+      };
+    </script>
+  </body>
+</html>
