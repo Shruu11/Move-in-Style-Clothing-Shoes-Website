@@ -16,10 +16,4 @@ Welcome to **Move in Style**, your one-stop destination for fitness clothing and
 - **JavaScript**: For baisc Dyanmic operations.
 - **FontAwesome**: For icons used throughout the website.
 
-## Getting Started
 
-To get a local copy up and running, follow these simple steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
